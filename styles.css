@@ -20,9 +20,17 @@ header {
     align-items: center;
 }
 
+@keyframes slideMainBar {
+    0%   {
+        min-width: 80%;
+    }
+}
+
 #mainTitleBar {
     background-color: #D63230;
     min-width: 90%;
+    animation-name: slideMainBar;
+    animation-duration: 2s;
 }
 
 #mainTitleBar h1 {
@@ -40,9 +48,17 @@ header {
     margin-top: 3vh;
 }
 
+@keyframes slideTitleBar {
+    0%   {
+        min-width: 55%;
+    }
+}
+
 #secondaryTitleBar {
     background-color: #5A5A5A;
     min-width: 36%;
+    animation-name: slideTitleBar;
+    animation-duration: 2s;
 }
 
 #secondaryTitleBar h2 {
