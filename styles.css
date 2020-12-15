@@ -67,11 +67,11 @@ header {
     text-align: right;
 }
 
-#contactLinksContainer {
+#linkContainer {
     margin: 3vh 0;
 }
 
-#contactLinksBar {
+#linkBar {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -81,8 +81,11 @@ header {
     height: 100%;
 }
 
-.contactLink {
-    background-color: #FFFFFF;
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F2EE;
     border-color: #707070;
     border-style: solid;
     border-width: 0.6vh;
@@ -90,14 +93,25 @@ header {
     width: 9vh;
     height: 9vh;
     margin-left: min(5vh, 2%);
+    transition: background-color 300ms, border-color 300ms;
+}
+
+.link:hover {
+    background-color: #FFFFFF;
+    border-color: #435058;
 }
 
 .goToContentButton {
     background-color: #435058;
-    height: 50px;
+    height: 7vh;
 }
 
 footer {
     display: flex;
     flex-direction: column;
+}
+
+.linkIcon {
+    height: 80%;
+    width: 80%;
 }
