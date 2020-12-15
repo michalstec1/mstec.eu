@@ -14,69 +14,67 @@ header {
 }
 
 #mainTitleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-top: 38vh;
 }
 
-#mainTitle {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+#mainTitleBar {
     background-color: #D63230;
     width: 90%;
-    height: 100%;
 }
 
-#mainTitle h1 {
-    display: flex;
+#mainTitleBar h1 {
     font-size: 12vh;
     color: #F1F2EE;
     margin: 0.2em 0.3em;
+    text-align: right;
 }
 
 #secondaryTitleContainer {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
     margin-top: 3vh;
 }
 
-#secondaryTitle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+#secondaryTitleBar {
     background-color: #5A5A5A;
     width: 34%;
 }
 
-#secondaryTitle h2 {
+#secondaryTitleBar h2 {
     color: #F1F2EE;
     font-size: 5vh;
     margin: 0.2em 0.3em;
 }
 
 #tagsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-top: 6vh;
 }
 
-#tags {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+#tagsBar {
     background-color: #5A5A5A;
     width: 89%;
     height: 100%; 
 }
 
-#tags p {
+#tagsBar p {
     color: #F1F2EE;
     font-size: 3vh;
     margin: 0.4em 0.5em;
+    text-align: right;
 }
 
 #contactLinksContainer {
     margin-top: 3vh;
 }
 
-#contactLinks {
+#contactLinksBar {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
