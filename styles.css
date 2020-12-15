@@ -101,9 +101,26 @@ header {
     border-color: #435058;
 }
 
+.linkIcon {
+    height: 80%;
+    width: 80%;
+}
+
 .goToContentButton {
     background-color: #435058;
-    height: 7vh;
+    height: 6vh;
+    transition: background-color 300ms;
+}
+
+.goToContentButton:hover {
+    background-color: #4D5B65;
+}
+
+.goToContentIcon {
+    background-image: url("icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%
 }
 
 footer {
@@ -111,7 +128,6 @@ footer {
     flex-direction: column;
 }
 
-.linkIcon {
-    height: 80%;
-    width: 80%;
+footer .goToContentIcon {
+    transform: rotate(180deg);
 }
