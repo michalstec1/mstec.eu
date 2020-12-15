@@ -5,24 +5,20 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-}
-
-#cover {
+    justify-content: flex-end;
     background: linear-gradient(#DEDEDD, #D8D9D5);
-    flex: 1;
+    height: 100vh;
 }
 
 #mainTitleContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 38vh;
 }
 
 #mainTitleBar {
     background-color: #D63230;
-    width: 90%;
+    min-width: 90%;
 }
 
 #mainTitleBar h1 {
@@ -42,7 +38,7 @@ header {
 
 #secondaryTitleBar {
     background-color: #5A5A5A;
-    width: 34%;
+    min-width: 36%;
 }
 
 #secondaryTitleBar h2 {
@@ -72,7 +68,7 @@ header {
 }
 
 #contactLinksContainer {
-    margin-top: 3vh;
+    margin: 3vh 0;
 }
 
 #contactLinksBar {
@@ -81,6 +77,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     width: 89%;
+    max-width: 100%;
     height: 100%;
 }
 
@@ -92,7 +89,7 @@ header {
     border-radius: 2vh;
     width: 9vh;
     height: 9vh;
-    margin-left: 5vh;
+    margin-left: min(5vh, 2%);
 }
 
 .goToContentButton {
@@ -104,6 +101,3 @@ footer {
     display: flex;
     flex-direction: column;
 }
-
-
-
