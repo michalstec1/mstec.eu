@@ -205,7 +205,8 @@ article {
     background-color: #E5E6E2;
     margin: 1em 0;
     padding: 0.5em 0.5em 0.5em 0.8em;
-    width: 90%;
+    width: 95%;
+    box-sizing: border-box;
 }
 
 #detailedInfo header h1 {
@@ -219,7 +220,7 @@ article {
 }
 
 .even h1 {
-    margin-left: calc(10% - 0.8em);
+    margin-left: 5%;
 }
 
 .odd {
