@@ -1,9 +1,16 @@
-function attachMail () {
-    var encodedSubdomain = '1cetslahcim';
-    var encodedDomain = 'moc.liamg';
+let encodedSubdomain = '1cetslahcim';
+let encodedDomain = 'moc.liamg';
 
-    var decryptedSubdomain = encodedSubdomain.split("").reverse().join("");
-    var decryptedDomain = encodedDomain.split("").reverse().join("");
+let mailSubject = 'We have a career opportunity for you';
+
+function decodeText(text) {
+    return text.split('').reverse().join('');
+}
+
+function attachMailDetail() {
+
+    let decryptedSubdomain = decodeText(encodedSubdomain);
+    let decryptedDomain = decodeText(encodedDomain);
 
     for (let element of document.getElementsByClassName('emailSubdomain')) {
         element.innerHTML = decryptedSubdomain;
@@ -12,6 +19,19 @@ function attachMail () {
     for (let element of document.getElementsByClassName('emailDomain')) {
         element.innerHTML = decryptedDomain;
     }
+
 }
 
-attachMail();
+function attachMailLink() {
+
+    let decryptedSubdomain = decodeText(encodedSubdomain);
+    let decryptedDomain = decodeText(encodedDomain);
+
+    for (let element of document.getElementsByClassName('emailLink')) {
+        element.href = 'mailto:' + decryptedSubdomain + '@' + decryptedDomain + '?subject=' + mailSubject;
+    }
+
+}
+
+attachMailDetail();
+attachMailLink();
