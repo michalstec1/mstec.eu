@@ -5,7 +5,8 @@
     <title>Michał Stec</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4TB7F6W6M"></script>
@@ -19,7 +20,9 @@
 </head>
 
 <body>
+
     <a id="pageStart"></a>
+
     <header>
         <div id="mainTitleContainer">
             <div id="mainTitleBar">
@@ -56,7 +59,8 @@
             <div class="goToContentIcon"></div>
         </a>
     </header>
-    <section>
+
+    <section id="basicInfo">
         <a id="contentStart"></a>
         <article id="description">
             <img id="profilePicture" src="https://ik.imagekit.io/mstec/profile-picture.jpg" alt="Profile picture">
@@ -68,49 +72,60 @@
                 looking forward to expand my knowledge into new areas in order become the ultimate expert.</p>
         </article>
 
-        <article id="details">
-            <div class="detailColumn">
-                <div class="detailHeader">Name</div>
-                <div class="detailContent">Michał Stec</div>
+        <article id="facts">
+            <div class="factColumn">
+                <div class="factHeader">Name</div>
+                <div class="factContent">Michał Stec</div>
             </div>
-            <div class="detailColumn">
-                <div class="detailHeader">Location</div>
-                <div class="detailContent">Zeist, The Netherlands</div>
+            <div class="factColumn">
+                <div class="factHeader">Location</div>
+                <div class="factContent">Zeist, The Netherlands</div>
             </div>
-            <div class="detailColumn">
-                <div class="detailHeader">Nationality</div>
-                <div class="detailContent">Polish</div>
+            <div class="factColumn">
+                <div class="factHeader">Nationality</div>
+                <div class="factContent">Polish</div>
             </div>
-            <div class="detailColumn">
-                <div class="detailHeader">E-mail</div>
-                <div class="detailContent">
+            <div class="factColumn">
+                <div class="factHeader">E-mail</div>
+                <div class="factContent">
                     <span class="emailSubdomain"></span><span>@</span><span class="emailDomain"></span>
                 </div>
             </div>
         </article>
-
-        <article>
-            Career history
-        </article>
-
-        <article>
-            Education
-        </article>
-
-        <article>
-            Skills
-        </article>
-
-        <article>
-            Languages
-        </article>
-
     </section>
+
+    <section id="detailedInfo">
+        <article>
+            <header class="even">
+                <h1>Career history</h1>
+            </header>
+        </article>
+
+        <article>
+            <header class="odd">
+                <h1>Education</h1>
+            </header>
+        </article>
+
+        <article>
+            <header class="even">
+                <h1>Skills</h1>
+            </header>
+        </article>
+
+        <article>
+            <header class="odd">
+                <h1>Languages</h1>
+            </header>
+        </article>
+    </section>
+
     <footer>
         <a href="#pageStart" class="goToContentButton">
             <div class="goToContentIcon"></div>
         </a>
     </footer>
+
     <script src="js/scripts.js"></script>
 </body>
 
