@@ -230,6 +230,7 @@ article {
 .articleContent {
     display: flex;
     flex-direction: column;
+    margin: 0 0.8em 0.8em 0.8em;
 }
 
 .articleRow {
@@ -257,7 +258,7 @@ article {
 
 .articleContent li {
     line-height: 1.5em;
-    margin-bottom: 0.7em;
+    margin-top: 0.7em;
     font-size: 1.1em;
 }
 
@@ -283,15 +284,17 @@ article {
 }
 
 @media (max-width: 767px) {
-    .articleRow {
+    .articleContent .articleRow:nth-of-type(1) {
         flex-direction: column-reverse;
     }
-    .articleRight {
+    .articleContent .articleRow:nth-of-type(2) {
+        flex-direction: row-reverse;
+    }
+    .articleContent .articleRight:nth-of-type(1) {
         width: auto;
     }
-    .articleLeft {
+    .articleContent .articleRow:nth-of-type(1) .articleLeft {
         margin-left: 3%;
-        margin-right: auto;
     }
 }
 
