@@ -181,12 +181,13 @@ article {
 }
 
 #facts {
-    padding-top: 0.5em;
+    padding: 0.5em 1.5em 0 1.5em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: #435058;
+    box-sizing: border-box;
 }
 
 .factColumn {
