@@ -142,7 +142,7 @@ header {
 
 .goToContentIcon {
     flex: 1;
-    background-image: url("icons/arrow.svg");
+    background-image: url("../icons/arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
     height: 150%
