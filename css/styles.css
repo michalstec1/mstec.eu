@@ -182,6 +182,7 @@ article {
 
 #facts {
     padding: 0.5em 1.5em 0 1.5em;
+    margin-bottom: 0.8em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -211,7 +212,6 @@ article {
 
 #detailedInfo header {
     background-color: #E5E6E2;
-    margin: 1em 0;
     padding: 0.5em 0.5em 0.5em 0.8em;
     width: 95%;
     box-sizing: border-box;
@@ -238,7 +238,7 @@ article {
 .articleContent {
     display: flex;
     flex-direction: column;
-    margin: 0 0.8em 0.8em 0.8em;
+    margin: 0.8em 3em;
 }
 
 .articleRow {
