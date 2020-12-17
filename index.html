@@ -3,6 +3,7 @@
 
 <head>
     <title>Michał Stec</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
@@ -22,7 +23,6 @@
     <header>
         <div id="mainTitleContainer">
             <div id="mainTitleBar">
-                <!-- <h1>&lt;micha&#322;_stec&gt; |</h1> -->
                 <h1>Michał Stec</h1>
             </div>
         </div>
@@ -57,25 +57,61 @@
         </a>
     </header>
     <section>
-        <article>
-            <a id="contentStart"></a>
-            This is the first article
+        <a id="contentStart"></a>
+        <article id="description">
+            <img id="profilePicture" src="https://ik.imagekit.io/mstec/profile-picture.jpg" alt="Profile picture">
+            <p id="descriptionText">I'm a software developer with almost 3 years of experience in the industry. Over
+                that time I've had a chance to work on various types of applications and problems in the area of
+                Software as a Service. I thrive on designing and building efficient and reliable solutions with utmost
+                attention to detail. Being a part of a mature Scrum team, I'm well familiar with best practices on how
+                to turn ideas into complete products that fulfill customers' needs. I'm a fast learner and I'm always
+                looking forward to expand my knowledge into new areas in order become the ultimate expert.</p>
         </article>
-        <article>
 
+        <article id="details">
+            <div class="detailColumn">
+                <div class="detailHeader">Name</div>
+                <div class="detailContent">Michał Stec</div>
+            </div>
+            <div class="detailColumn">
+                <div class="detailHeader">Location</div>
+                <div class="detailContent">Zeist, The Netherlands</div>
+            </div>
+            <div class="detailColumn">
+                <div class="detailHeader">Nationality</div>
+                <div class="detailContent">Polish</div>
+            </div>
+            <div class="detailColumn">
+                <div class="detailHeader">E-mail</div>
+                <div class="detailContent">
+                    <span class="emailSubdomain"></span><span>@</span><span class="emailDomain"></span>
+                </div>
+            </div>
         </article>
-        <article>
 
-        </article>
         <article>
-
+            Career history
         </article>
+
+        <article>
+            Education
+        </article>
+
+        <article>
+            Skills
+        </article>
+
+        <article>
+            Languages
+        </article>
+
     </section>
     <footer>
         <a href="#pageStart" class="goToContentButton">
             <div class="goToContentIcon"></div>
         </a>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
