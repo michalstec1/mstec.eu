@@ -229,65 +229,69 @@ article {
 
 .articleContent {
     display: flex;
+    flex-direction: column;
+}
+
+.articleRow {
+    display: flex;
     flex-direction: row;
-    margin: 0 5%;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0.8em 0;
+    row-gap: 0.8em;
 }
 
-.articleContent aside {
+.articleLeft {
     margin-left: auto;
-    margin-right: 3%;
-}
-
-.articleContent aside p {
     color: #707070;
-    margin-top: 0.2em;
 }
 
-.articleContent aside img {
+.articleRight {
+    width: 70%;
+    margin-left: 3%;
+}
+
+.articleContent ul {
+    color: #5A5A5A;
+}
+
+.articleContent li {
+    line-height: 1.5em;
+    margin-bottom: 0.7em;
+    font-size: 1.1em;
+}
+
+.articleContent img {
     height: 3em;
-    margin: 2em 0;
-}
-
-.articleContent div {
-    width: 75%;
 }
 
 .articleContent h2 {
     color: #435058;
     font-weight: 600;
     font-size: 1.3em;
-    margin-bottom: 1.3em;
 }
 
 .articleContent h3 {
     color: #435058;
     font-size: 1.3em;
-    margin: 0.7em 0;
+    margin-bottom: 0.7em;
 }
 
 .articleContent h4 {
     color: #435058;
     font-size: 1.1em;
-    margin: 0.5em 0 1.5em 0;
-}
-
-.articleContent li {
-    line-height: 1.5em;
-    margin: 0.7em 0;
-    font-size: 1.1em;
-}
-
-.articleContent ul {
-    color: #5A5A5A;
-    margin: 1em 0;
 }
 
 @media (max-width: 767px) {
-    .articleContent {
-        flex-direction: column;
+    .articleRow {
+        flex-direction: column-reverse;
     }
-    .articleContent div {
-        width: 100%;
+    .articleRight {
+        width: auto;
+    }
+    .articleLeft {
+        margin-left: 3%;
+        margin-right: auto;
     }
 }
 
