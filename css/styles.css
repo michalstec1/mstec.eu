@@ -157,7 +157,7 @@ article {
 #descriptionText {
     color: #5A5A5A;
     line-height: 1.5em;
-    font-size: 1.2em;
+    font-size: 1.1em;
     background-color: #F1F2EE;
     text-align: justify;
     margin: 2vh 0;
@@ -225,6 +225,70 @@ article {
 
 .odd {
     align-self: flex-end;
+}
+
+.articleContent {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5%;
+}
+
+.articleContent aside {
+    margin-left: auto;
+    margin-right: 3%;
+}
+
+.articleContent aside p {
+    color: #707070;
+    margin-top: 0.2em;
+}
+
+.articleContent aside img {
+    height: 3em;
+    margin: 2em 0;
+}
+
+.articleContent div {
+    width: 75%;
+}
+
+.articleContent h2 {
+    color: #435058;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-bottom: 1.3em;
+}
+
+.articleContent h3 {
+    color: #435058;
+    font-size: 1.3em;
+    margin: 0.7em 0;
+}
+
+.articleContent h4 {
+    color: #435058;
+    font-size: 1.1em;
+    margin: 0.5em 0 1.5em 0;
+}
+
+.articleContent li {
+    line-height: 1.5em;
+    margin: 0.7em 0;
+    font-size: 1.1em;
+}
+
+.articleContent ul {
+    color: #5A5A5A;
+    margin: 1em 0;
+}
+
+@media (max-width: 767px) {
+    .articleContent {
+        flex-direction: column;
+    }
+    .articleContent div {
+        width: 100%;
+    }
 }
 
 footer {
