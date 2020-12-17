@@ -265,6 +265,9 @@ article {
 
 .articleContent img {
     height: 3em;
+    border-style: solid;
+    border-color: #D8D9D5;
+    border-width: 0.15em;
 }
 
 .articleContent h2 {
