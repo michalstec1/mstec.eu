@@ -266,7 +266,7 @@ article {
 
 .articleContent li {
     line-height: 1.5em;
-    margin-top: 0.7em;
+    margin-bottom: 0.7em;
     font-size: 1.1em;
     list-style-type: square;
 }
