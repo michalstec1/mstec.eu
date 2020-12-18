@@ -257,17 +257,20 @@ article {
 
 .articleRight {
     width: 70%;
-    margin-left: 3%;
+    margin-left: 5%;
 }
 
 .articleContent ul {
     color: #5A5A5A;
+    line-height: 1.5em;
+    font-size: 1.1em;
 }
 
 .articleContent li {
-    line-height: 1.5em;
     margin-bottom: 0.7em;
-    font-size: 1.1em;
+}
+
+.achievementList li {
     list-style-type: square;
 }
 
@@ -306,14 +309,25 @@ article {
         width: auto;
     }
     .headerRow .articleLeft {
-        margin-left: 3%;
+        margin-left: 5%;
     }
     .contentRow {
         flex-direction: column;
     }
     .contentRow .articleLeft {
-        margin-left: 3%;
+        margin-left: 5%;
     }
+}
+
+.skillList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skillList li {
+    width: 30%;
 }
 
 footer {
