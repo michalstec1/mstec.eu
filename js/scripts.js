@@ -33,5 +33,41 @@ function attachMailLink() {
 
 }
 
+function attachSkillLevels(skillBar, level) {
+
+    for (let i = 1; i <= 4; ++i) {
+
+        let skillLevel = document.createElement('div');
+        skillLevel.classList.add('skillLevel');
+        if (i <= level) {
+            skillLevel.classList.add('activeSkillLevel');
+        }
+        skillBar.appendChild(skillLevel);
+
+    }
+
+}
+
+function attachSkillBar(skillElement, level) {
+
+    let skillBar = document.createElement('div');
+    skillBar.classList.add('skillBar');
+    attachSkillLevels(skillBar, level);
+    skillElement.appendChild(skillBar);
+
+}
+
+function attachSkillBars() {
+
+    for (let level = 1; level <= 4; ++level) {
+        let skills = document.querySelectorAll('.skill-' + level);
+        for (let element of skills) {
+            attachSkillBar(element, level);
+        }
+    }
+
+}
+
 attachMailDetail();
 attachMailLink();
+attachSkillBars();

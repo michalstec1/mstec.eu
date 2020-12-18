@@ -339,6 +339,27 @@ article {
     width: 30%;
 }
 
+.skillBar {
+    display: flex;
+    flex-direction: row;
+    width: 5em;
+    height: 0.3em;
+    gap: 5px;
+}
+
+.skillLevel {
+    background-color: #EBC6C6;
+    height: 100%;
+    width: 100%;
+    margin-top: 0.3em;
+}
+
+.activeSkillLevel {
+    background-color: #D63230;
+    height: 100%;
+    width: 100%;
+}
+
 footer {
     display: flex;
     flex-direction: column;
