@@ -263,14 +263,16 @@ article {
 .articleContent ul {
     color: #5A5A5A;
     line-height: 1.5em;
-    font-size: 1.1em;
 }
 
 .articleContent li {
-    margin-bottom: 0.7em;
+    margin-bottom: 1.1em;
+    font-size: 1.2em;
 }
 
 .achievementList li {
+    margin-bottom: 0.7em;
+    font-size: 1.1em;
     list-style-type: square;
 }
 
@@ -327,6 +329,13 @@ article {
 }
 
 .skillList li {
+    width: 30%;
+    font-size: 1.2em;
+    color: #435058;
+}
+
+.skillList::after {
+    content: "";
     width: 30%;
 }
 
