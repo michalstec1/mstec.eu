@@ -181,7 +181,7 @@ article {
 }
 
 #facts {
-    padding: 0.5em 1.5em 0 1.5em;
+    padding: 1em 1.5em;
     margin-bottom: 0.8em;
     display: flex;
     flex-direction: row;
@@ -192,7 +192,7 @@ article {
 }
 
 .factColumn {
-    margin: 1.5em 1.5em;
+    margin: 1em 1.5em;
 }
 
 .factHeader {
