@@ -1,10 +1,12 @@
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #F1F2EE;
+    height: 100%;
 }
 
 body > header {
@@ -12,7 +14,7 @@ body > header {
     flex-direction: column;
     justify-content: flex-end;
     background: linear-gradient(#DEDEDD, #D8D9D5);
-    height: 100vh;
+    height: 100%;
 }
 
 @keyframes slideMainBar {
