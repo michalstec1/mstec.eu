@@ -205,6 +205,15 @@ article {
     font-size: 1.3em;
 }
 
+@media (max-width: 767px) {
+    .factHeader {
+        text-align: center;
+    }
+    .factContent {
+        text-align: center;
+    }
+}
+
 #detailedInfo article {
     display: flex;
     flex-direction: column;
@@ -311,13 +320,16 @@ article {
         width: auto;
     }
     .headerRow .articleLeft {
-        margin-left: 5%;
+        margin-left: 0;
     }
     .contentRow {
         flex-direction: column;
     }
     .contentRow .articleLeft {
-        margin-left: 5%;
+        margin-left: 0;
+    }
+    .articleRight {
+        margin-left: 0;
     }
 }
 
@@ -337,6 +349,15 @@ article {
 .skillList::after {
     content: "";
     width: 30%;
+}
+
+@media (max-width: 550px) {
+    .skillList li {
+        width: 50%;
+    }
+    .skillList::after {
+        width: 50%;
+    }
 }
 
 .skillBar {
