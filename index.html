@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <title>Michał Stec</title>
     <meta name="author" content="Michał Stec">
-    <meta name="description"
-        content="Software developer based in the Netherlands">
+    <meta name="description" content="Software developer based in the Netherlands">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="noimageindex">
     <meta property="og:type" content="website">
@@ -14,7 +13,8 @@
     <meta property="og:locale" content="en_GB" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&display=swap">
+    <link rel="preload" as="font"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&display=swap">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -171,13 +171,35 @@
                 <div class="articleRow contentRow">
                     <p class="articleLeft">Languages</p>
                     <div class="articleRight">
-                        <ul class="skillList">
-                            <li class="skill-3">Java</li>
-                            <li class="skill-2">JavaScript</li>
-                            <li class="skill-3">C++</li>
-                            <li class="skill-3">XML</li>
+                        <ul class="skillList tooltipContainer">
+                            <li class="skill-3 tooltip">
+                                <span class="tooltipText">
+                                    I developed multiple web applications deployable to Wildfly, based mostly on Java EE
+                                    8 and contributed to legacy applications based on Java 6.
+                                </span>
+                                <span>Java</span>
+                            </li>
+                            <li class="skill-2 tooltip">
+                                <span class="tooltipText">I contributed to a frontend application written in
+                                    TypeScript.</span>
+                                <span>JavaScript</span>
+                            </li>
+                            <li class="skill-3 tooltip">
+                                <span class="tooltipText">My bachelor's thesis was a DirectX 11 application responsible
+                                    for rendering 3D models and written in C++.</span>
+                                <span>C++</span>
+                            </li>
+                            <li class="skill-3 tooltip">
+                                <span class="tooltipText">I developed and contributed to applications that read and
+                                    transform XML documents. That includes developing XSD and XSL documents.</span>
+                                <span>XML</span>
+                            </li>
                             <li class="skill-3">HTML</li>
-                            <li class="skill-2">CSS</li>
+                            <li class="skill-2 tooltip">
+                                <span class="tooltipText">I developed this very page from scratch, making sure it's
+                                    responsive, without relying on CSS frameworks or ready-to-use components.</span>
+                                <span>CSS</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -186,10 +208,20 @@
                     <div class="articleRight">
                         <ul class="skillList">
                             <li class="skill-2">Git</li>
-                            <li class="skill-2">Maven</li>
-                            <li class="skill-3">GitLab CI</li>
+                            <li class="skill-2 tooltip">
+                                <span class="tooltipText">All the applications I've developed were built with Maven.
+                                    I've
+                                    also developed a library that makes use of dependency management
+                                    capabilities.</span>
+                                <span>Maven</span>
+                            </li>
+                            <li class="skill-3 tooltip">
+                                <span class="tooltipText">I developed CI scripts that define pipelines for executing
+                                    tests and deploying applications. They made for a complete replacement of
+                                    Jenkins.</span>
+                                <span>GitLab CI</span>
+                            </li>
                             <li class="skill-1">Jenkins</li>
-                            <li class="skill-2">JIRA</li>
                         </ul>
                     </div>
                 </div>
@@ -198,8 +230,16 @@
                     <div class="articleRight">
                         <ul class="skillList">
                             <li class="skill-3">EJB</li>
-                            <li class="skill-2">JMS</li>
-                            <li class="skill-3">JDBC</li>
+                            <li class="skill-2 tooltip">
+                                <span class="tooltipText">I developed applications that read and send messages to
+                                    ActiveMQ as well as a legacy message broker.</span>
+                                <span>JMS</span>
+                            </li>
+                            <li class="skill-3 tooltip">
+                                <span class="tooltipText">I used JDBC extensively before having switched to utilities
+                                    provided by jOOQ.</span>
+                                <span>JDBC</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -207,7 +247,11 @@
                     <p class="articleLeft">Libraries</p>
                     <div class="articleRight">
                         <ul class="skillList">
-                            <li class="skill-3">jOOQ</li>
+                            <li class="skill-3 tooltip">
+                                <span class="tooltipText">I used jOOQ to generate and execute dynamic SQL queries in a
+                                    CRUD backend.</span>
+                                <span>jOOQ</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -215,10 +259,26 @@
                     <p class="articleLeft">Frameworks</p>
                     <div class="articleRight">
                         <ul class="skillList">
-                            <li class="skill-2">Angular</li>
-                            <li class="skill-2">Camel</li>
-                            <li class="skill-2">Spring</li>
-                            <li class="skill-3">Selenium</li>
+                            <li class="skill-2 tooltip">
+                                <span class="tooltipText">I contributed to an existing Angular application by adding new
+                                    functionality and troubleshooting issues.</span>
+                                <span>Angular</span>
+                            </li>
+                            <li class="skill-2 tooltip">
+                                <span class="tooltipText">I used Camel to build REST services and applicatons that
+                                    process JMS messages.</span>
+                                <span>Camel</span>
+                            </li>
+                            <li class="skill-2 tooltip">
+                                <span class="tooltipText">I read a book about Spring and developed a prototype
+                                    application that used Spring Data JPA to read from PostgreSQL.</span>
+                                <span>Spring</span>
+                            </li>
+                            <li class="skill-2 tooltip">
+                                <span class="tooltipText">I read a book about Selenium and created example frontend
+                                    tests in Java.</span>
+                                <span>Selenium</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -226,10 +286,33 @@
                     <p class="articleLeft">Data</p>
                     <div class="articleRight">
                         <ul class="skillList">
-                            <li class="skill-2">PostgreSQL</li>
-                            <li class="skill-1">MongoDB</li>
-                            <li class="skill-2">Elasticsearch</li>
-                            <li class="skill-2">Kibana</li>
+                            <li class="skill-2 tooltip">
+                                <span class="tooltipText">I have experience with PostgreSQL as a backend
+                                    developer. Occasionally I also create trigger procedures, analyse query
+                                    performance and troubleshoot issues with processes.</span>
+                                <span>PostgreSQL</span>
+                            </li>
+                            <li class="skill-1 tooltip">
+                                <span class="tooltipText">I contributed to CRUD applications that connect to Mongo and
+                                    developed scripts for data migration.</span>
+                                <span>MongoDB</span>
+                            </li>
+                            <li class="skill-2 tooltip">
+                                <span class="tooltipText">I developed services that read documents from Elasticsearch
+                                    using the Java client. I've also attended the Elasticsearch Engineer 1
+                                    course.</span>
+                                <span>Elasticsearch</span>
+                            </li>
+                            <li class="skill-2 tooltip">
+                                <span class="tooltipText">I use Kibana to analyse application logging stored in
+                                    Elasticsearch and troubleshoot issues.</span>
+                                <span>Kibana</span>
+                            </li>
+                            <li class="skill-1 tooltip">
+                                <span class="tooltipText">I contributed to applications that read and store documents in
+                                    Solr.</span>
+                                <span>Solr</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -237,8 +320,17 @@
                     <p class="articleLeft">Web</p>
                     <div class="articleRight">
                         <ul class="skillList">
-                            <li class="skill-3">REST</li>
-                            <li class="skill-3">SOAP</li>
+                            <li class="skill-3 tooltip">
+                                <span class="tooltipText">I developed multiple high-available JAX-RS applications that
+                                    provide
+                                    both internal and external endpoints.</span>
+                                <span>REST</span>
+                            </li>
+                            <li class="skill-3 tooltip">
+                                <span class="tooltipText">I developed a high-available JAX-WS application that provides
+                                    multiple SOAP web services called directly by customers.</span>
+                                <span>SOAP</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -246,9 +338,30 @@
                     <p class="articleLeft">Others</p>
                     <div class="articleRight">
                         <ul class="skillList">
-                            <li class="skill-2">Linux</li>
-                            <li class="skill-3">Scrum</li>
-                            <li class="skill-2">UI/UX</li>
+                            <li class="skill-2 tooltip">
+                                <span class="tooltipText">I have experience as a Linux server user, especially in
+                                    deploying applications and troubleshooting issues. I also set up the web server
+                                    responsible for hosting this page.</span>
+                                <span>Linux</span>
+                            </li>
+                            <li class="skill-3 tooltip">
+                                <span class="tooltipText">I witnessed an organisational transformation that embraced
+                                    the Agile Methodology and I've been a part of a well-functioning Scrum team for over
+                                    a year. I facilitate meetings occasionally using elements of liberating
+                                    structures.</span>
+                                <span>Scrum</span>
+                            </li>
+                            <li class="skill-2 tooltip">
+                                <span class="tooltipText">Apart from being a JIRA user as a developer, I've started to
+                                    perform administrative tasks such as creating automations for the team.</span>
+                                <span>JIRA</span>
+                            </li>
+                            <li class="skill-2 tooltip">
+                                <span class="tooltipText">I redesigned a legacy application by creating wireframes in
+                                    Balsamiq, taking usability improvements into consideration and interviewing
+                                    users.</span>
+                                <span>UI/UX</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -262,11 +375,20 @@
             <div class="articleContent">
                 <div class="articleRow contentRow">
                     <div class="articleRight">
-                        <ul>
+                        <ul class="columnList">
                             <li class="skill-4">English</li>
                             <li class="skill-4">Polish</li>
-                            <li class="skill-2">Dutch</li>
-                            <li class="skill-1">German</li>
+                            <li class="skill-2 tooltip">
+                                <span class="tooltipText">I can read Dutch texts of intermediate to high difficulty. I
+                                    rarely use spoken Dutch.</span>
+                                <span>Dutch</span>
+                            </li>
+                            <li class="skill-1 tooltip">
+                                <span class="tooltipText">I can read German texts of basic to intermediate difficulty. I
+                                    have the
+                                    ability to improve that quickly since my proficiency used to be higher.</span>
+                                <span>German</span>
+                            </li>
                         </ul>
                     </div>
                 </div>

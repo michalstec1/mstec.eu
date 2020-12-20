@@ -370,19 +370,70 @@ article {
     width: 5em;
     height: 0.3em;
     gap: 5px;
+    margin-top: 0.3em;
 }
 
 .skillLevel {
     background-color: #EBC6C6;
     height: 100%;
     width: 100%;
-    margin-top: 0.3em;
 }
 
 .activeSkillLevel {
     background-color: #D63230;
     height: 100%;
     width: 100%;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltipText {
+    position: absolute;
+    transition: opacity 0.3s, visibility 0.1s;
+    top: 130%;
+    opacity: 0;
+    font-size: 0.9em;
+    background-color: #E5E6E2;
+    padding: 0.4em 0.5em;
+    box-sizing: border-box;
+    border: 0.15em solid #435058;
+    text-align: justify;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltipText, .tooltip:active .tooltipText {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltipText, .tooltip .tooltipText:hover, .tooltip .tooltipText:active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.tooltipIcon {
+    display: inline-block;
+    position: absolute;
+    background-image: url("../assets/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1.8em;
+    width: 1.8em;
+    top: -0.2em;
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+
+.tooltip:hover .tooltipIcon, .tooltip:active .tooltipIcon {
+    transform: rotate(0deg);
+}
+
+.columnList {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {

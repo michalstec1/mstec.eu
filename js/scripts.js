@@ -68,6 +68,39 @@ function attachSkillBars() {
 
 }
 
+function attachTooltipArrows() {
+
+    for (let tooltip of document.querySelectorAll('.tooltip')) {
+        
+        let arrow = document.createElement('div');
+        arrow.classList.add('tooltipIcon');
+        tooltip.appendChild(arrow);
+
+    }
+
+}
+
+function positionTooltip() {
+
+    let tooltip = this.querySelector('.tooltipText');
+    let tooltipRect = tooltip.parentNode.getBoundingClientRect();
+    let containerRect = tooltip.parentNode.parentNode.getBoundingClientRect();
+    tooltip.style.width = containerRect.width + 'px';
+    tooltip.style.left = containerRect.x - tooltipRect.x + 'px';
+
+}
+
+function positionTooltips() {
+
+    let tooltips = document.querySelectorAll('.tooltip');
+    for (let tooltip of tooltips) {
+        tooltip.addEventListener("mouseover", positionTooltip);
+    }
+
+}
+
 attachMailDetail();
 attachMailLink();
+attachTooltipArrows();
 attachSkillBars();
+positionTooltips();
