@@ -18,7 +18,7 @@ body > header {
 }
 
 @keyframes slideMainBar {
-    0%   {
+    0%, 15% {
         min-width: 70%;
     }
 }
@@ -29,7 +29,7 @@ body > header > h1 {
     min-width: 80%;
     align-self: flex-start;
     animation-name: slideMainBar;
-    animation-duration: 2s;
+    animation-duration: 3s;
     font-size: 12vh;
     color: #F1F2EE;
     padding: 0.2em 0.3em;
@@ -37,7 +37,7 @@ body > header > h1 {
 }
 
 @keyframes slideSecondaryBar {
-    0%   {
+    0%, 15% {
         min-width: 65%;
     }
 }
@@ -49,7 +49,7 @@ body > header > h2 {
     align-self: flex-end;
     margin-top: 3vh;
     animation-name: slideSecondaryBar;
-    animation-duration: 2s;
+    animation-duration: 3s;
     color: #F1F2EE;
     font-size: 5vh;
     padding: 0.2em 0.3em;
