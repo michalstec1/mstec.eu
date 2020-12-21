@@ -128,7 +128,7 @@ body > header > h3 {
     background-image: url("../assets/arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
-    height: 150%
+    height: 35%
 }
 
 section {
@@ -252,6 +252,12 @@ article {
     display: flex;
     flex-direction: column;
     margin: 0.8em 3em;
+}
+
+@media (max-width: 425px) {
+    .articleContent {
+        margin: 0.8em 2em;
+    }
 }
 
 .articleRow {
@@ -420,9 +426,9 @@ article {
     background-image: url("../assets/arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
-    height: 1.8em;
-    width: 1.8em;
-    top: -0.2em;
+    height: 0.7em;
+    width: 0.7em;
+    margin: 0.3em;
     transform: rotate(-90deg);
     transition: transform 0.3s;
 }
