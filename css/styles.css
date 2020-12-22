@@ -412,6 +412,10 @@ article {
     z-index: 1;
 }
 
+.link .tooltipText {
+    top: 115%;
+}
+
 .tooltip:hover .tooltipText, .tooltip:active .tooltipText {
     opacity: 1;
     visibility: visible;
