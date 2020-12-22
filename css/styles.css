@@ -87,6 +87,7 @@ body > header > h3 {
 
 .link {
     color: #435058;
+    font-size: 1.2em;
     white-space: nowrap;
     display: flex;
     align-items: center;
