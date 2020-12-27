@@ -37,7 +37,8 @@ body {
 }
 
 @keyframes fly-in-primary-title {
-    0%, 15% {
+    0%,
+    15% {
         min-width: 70%;
     }
 }
@@ -55,7 +56,8 @@ body {
 }
 
 @keyframes fly-in-secondary-title {
-    0%, 15% {
+    0%,
+    15% {
         min-width: 65%;
     }
 }
@@ -428,12 +430,15 @@ article {
     top: 115%;
 }
 
-.tooltip:hover .tooltip-text, .tooltip:active .tooltip-text {
+.tooltip:hover .tooltip-text,
+.tooltip:active .tooltip-text {
     opacity: 1;
     visibility: visible;
 }
 
-.tooltip-text, .tooltip .tooltip-text:hover, .tooltip .tooltip-text:active {
+.tooltip-text,
+.tooltip .tooltip-text:hover,
+.tooltip .tooltip-text:active {
     opacity: 0;
     visibility: hidden;
 }
@@ -451,7 +456,8 @@ article {
     transition: transform 0.3s;
 }
 
-.tooltip:hover .tooltip-icon, .tooltip:active .tooltip-icon {
+.tooltip:hover .tooltip-icon,
+.tooltip:active .tooltip-icon {
     transform: rotate(0deg);
 }
 
