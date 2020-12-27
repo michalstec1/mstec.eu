@@ -13,7 +13,7 @@ body {
     height: 100%;
 }
 
-body > header {
+#title-page {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -27,7 +27,7 @@ body > header {
     }
 }
 
-body > header > h1 {
+#title-page h1 {
     background-color: #D63230;
     min-width: 80%;
     align-self: flex-start;
@@ -45,7 +45,7 @@ body > header > h1 {
     }
 }
 
-body > header > h2 {
+#title-page h2 {
     background-color: #5A5A5A;
     min-width: 45%;
     align-self: flex-end;
@@ -57,7 +57,7 @@ body > header > h2 {
     padding: 0.2em 0.4em;
 }
 
-body > header > h3 {
+#title-page h3 {
     margin-top: 6vh;
     background-color: #5A5A5A;
     width: 79%;
@@ -456,7 +456,7 @@ footer .go-to-content-icon {
 }
 
 @media print {
-    body > header {
+    #title-page {
         display: none;
     }
     .fact-content {
