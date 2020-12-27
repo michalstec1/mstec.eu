@@ -40,7 +40,7 @@ function attachSkillLevels(skillBar, level) {
         let skillLevel = document.createElement('div');
         skillLevel.classList.add('skill-level');
         if (i <= level) {
-            skillLevel.classList.add('active-skill-level');
+            skillLevel.classList.add('skill-level-active');
         }
         skillBar.appendChild(skillLevel);
 
