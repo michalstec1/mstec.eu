@@ -12,11 +12,11 @@ function attachMailDetail() {
     let decryptedSubdomain = decodeText(encodedSubdomain);
     let decryptedDomain = decodeText(encodedDomain);
 
-    for (let element of document.getElementsByClassName('email-subdomain')) {
+    for (let element of document.getElementsByClassName('js-email-subdomain')) {
         element.innerHTML = decryptedSubdomain;
     }
 
-    for (let element of document.getElementsByClassName('email-domain')) {
+    for (let element of document.getElementsByClassName('js-email-domain')) {
         element.innerHTML = decryptedDomain;
     }
 
@@ -27,7 +27,7 @@ function attachMailLink() {
     let decryptedSubdomain = decodeText(encodedSubdomain);
     let decryptedDomain = decodeText(encodedDomain);
 
-    for (let element of document.getElementsByClassName('email-link')) {
+    for (let element of document.getElementsByClassName('js-email-link')) {
         element.href = 'mailto:' + decryptedSubdomain + '@' + decryptedDomain + '?subject=' + mailSubject;
     }
 
