@@ -94,7 +94,7 @@ function positionTooltips() {
 
     let tooltips = document.querySelectorAll('.js-tooltip-wide .tooltip');
     for (let tooltip of tooltips) {
-        tooltip.addEventListener("mouseover", positionTooltip);
+        tooltip.addEventListener('mouseover', positionTooltip);
     }
 
 }

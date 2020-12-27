@@ -145,7 +145,7 @@ body {
 
 .scroll-page-button-icon {
     flex: 1;
-    background-image: url("../assets/arrow.svg");
+    background-image: url('../assets/arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
     height: 35%
@@ -374,7 +374,7 @@ article {
 }
 
 .skill-list::after {
-    content: "";
+    content: '';
     width: 30%;
 }
 
@@ -446,7 +446,7 @@ article {
 .tooltip-icon {
     display: inline-block;
     position: absolute;
-    background-image: url("../assets/arrow.svg");
+    background-image: url('../assets/arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
     height: 0.7em;
