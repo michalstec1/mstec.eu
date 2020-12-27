@@ -255,11 +255,11 @@ article {
     border-color: var(--accent-color);
 }
 
-.even h1 {
+.even-header h1 {
     margin-left: 5%;
 }
 
-.odd {
+.odd-header {
     align-self: flex-end;
 }
 
