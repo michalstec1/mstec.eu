@@ -12,11 +12,11 @@ function attachMailDetail() {
     let decryptedSubdomain = decodeText(encodedSubdomain);
     let decryptedDomain = decodeText(encodedDomain);
 
-    for (let element of document.getElementsByClassName('emailSubdomain')) {
+    for (let element of document.getElementsByClassName('email-subdomain')) {
         element.innerHTML = decryptedSubdomain;
     }
 
-    for (let element of document.getElementsByClassName('emailDomain')) {
+    for (let element of document.getElementsByClassName('email-domain')) {
         element.innerHTML = decryptedDomain;
     }
 
@@ -27,7 +27,7 @@ function attachMailLink() {
     let decryptedSubdomain = decodeText(encodedSubdomain);
     let decryptedDomain = decodeText(encodedDomain);
 
-    for (let element of document.getElementsByClassName('emailLink')) {
+    for (let element of document.getElementsByClassName('email-link')) {
         element.href = 'mailto:' + decryptedSubdomain + '@' + decryptedDomain + '?subject=' + mailSubject;
     }
 
@@ -38,9 +38,9 @@ function attachSkillLevels(skillBar, level) {
     for (let i = 1; i <= 4; ++i) {
 
         let skillLevel = document.createElement('div');
-        skillLevel.classList.add('skillLevel');
+        skillLevel.classList.add('skill-level');
         if (i <= level) {
-            skillLevel.classList.add('activeSkillLevel');
+            skillLevel.classList.add('active-skill-level');
         }
         skillBar.appendChild(skillLevel);
 
@@ -51,7 +51,7 @@ function attachSkillLevels(skillBar, level) {
 function attachSkillBar(skillElement, level) {
 
     let skillBar = document.createElement('div');
-    skillBar.classList.add('skillBar');
+    skillBar.classList.add('skill-bar');
     attachSkillLevels(skillBar, level);
     skillElement.appendChild(skillBar);
 
@@ -70,10 +70,10 @@ function attachSkillBars() {
 
 function attachTooltipArrows() {
 
-    for (let tooltip of document.querySelectorAll('.tooltipContainer .tooltip')) {
+    for (let tooltip of document.querySelectorAll('.tooltip-container .tooltip')) {
         
         let arrow = document.createElement('div');
-        arrow.classList.add('tooltipIcon');
+        arrow.classList.add('tooltip-icon');
         tooltip.appendChild(arrow);
 
     }
@@ -82,7 +82,7 @@ function attachTooltipArrows() {
 
 function positionTooltip() {
 
-    let tooltip = this.querySelector('.tooltipText');
+    let tooltip = this.querySelector('.tooltip-text');
     let tooltipRect = tooltip.parentNode.getBoundingClientRect();
     let containerRect = tooltip.parentNode.parentNode.getBoundingClientRect();
     tooltip.style.width = containerRect.width + 'px';
@@ -92,7 +92,7 @@ function positionTooltip() {
 
 function positionTooltips() {
 
-    let tooltips = document.querySelectorAll('.tooltipContainer .tooltip');
+    let tooltips = document.querySelectorAll('.tooltip-container .tooltip');
     for (let tooltip of tooltips) {
         tooltip.addEventListener("mouseover", positionTooltip);
     }
