@@ -51,7 +51,7 @@ function attachSkillLevels(skillBar, level) {
 function attachSkillBar(skillElement, level) {
 
     let skillBar = document.createElement('div');
-    skillBar.classList.add('skill-bar');
+    skillBar.classList.add('skill-level-bar');
     attachSkillLevels(skillBar, level);
     skillElement.appendChild(skillBar);
 
