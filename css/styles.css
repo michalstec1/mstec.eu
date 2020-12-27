@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
     height: 100%;
@@ -25,7 +29,6 @@ body > header {
 
 body > header > h1 {
     background-color: #D63230;
-    box-sizing: border-box;
     min-width: 80%;
     align-self: flex-start;
     animation-name: fly-in-primary-title;
@@ -44,7 +47,6 @@ body > header > h1 {
 
 body > header > h2 {
     background-color: #5A5A5A;
-    box-sizing: border-box;
     min-width: 45%;
     align-self: flex-end;
     margin-top: 3vh;
@@ -58,7 +60,6 @@ body > header > h2 {
 body > header > h3 {
     margin-top: 6vh;
     background-color: #5A5A5A;
-    box-sizing: border-box;
     width: 79%;
     color: #F1F2EE;
     font-size: 3vh;
@@ -73,7 +74,6 @@ body > header > h3 {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    box-sizing: border-box;
     width: 79%;
     max-width: 100%;
 }
@@ -97,8 +97,8 @@ body > header > h3 {
     border-style: solid;
     border-width: 0.6vh;
     border-radius: 2vh;
-    width: 9vh;
-    height: 9vh;
+    width: 10vh;
+    height: 10vh;
     margin-left: min(5vh, 2%);
     transition: background-color 300ms, border-color 300ms;
 }
@@ -157,7 +157,7 @@ article {
 
 #profile-picture {
     position: relative;
-    width: 190px;
+    width: 210px;
     margin: 0 2vh 2vh 2vh;
     border-style: solid;
     border-width: 10px;
@@ -195,7 +195,6 @@ article {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: #435058;
-    box-sizing: border-box;
 }
 
 .fact-column {
@@ -230,7 +229,6 @@ article {
     background-color: #E5E6E2;
     padding: 0.5em 0.5em 0.5em 0.8em;
     width: 95%;
-    box-sizing: border-box;
 }
 
 #detailed-info header h1 {
@@ -299,7 +297,7 @@ article {
 }
 
 .article-content img {
-    height: 3em;
+    height: 3.3em;
     border-style: solid;
     border-color: #D8D9D5;
     border-width: 0.15em;
@@ -407,7 +405,6 @@ article {
     font-size: 0.9em;
     background-color: #E5E6E2;
     padding: 0.4em 0.5em;
-    box-sizing: border-box;
     border: 0.15em solid #435058;
     text-align: justify;
     z-index: 1;
