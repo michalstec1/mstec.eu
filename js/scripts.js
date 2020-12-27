@@ -70,7 +70,7 @@ function attachSkillBars() {
 
 function attachTooltipArrows() {
 
-    for (let tooltip of document.querySelectorAll('.tooltip-container .tooltip')) {
+    for (let tooltip of document.querySelectorAll('.js-tooltip-arrows .tooltip')) {
         
         let arrow = document.createElement('div');
         arrow.classList.add('tooltip-icon');
@@ -92,7 +92,7 @@ function positionTooltip() {
 
 function positionTooltips() {
 
-    let tooltips = document.querySelectorAll('.tooltip-container .tooltip');
+    let tooltips = document.querySelectorAll('.js-tooltip-wide .tooltip');
     for (let tooltip of tooltips) {
         tooltip.addEventListener("mouseover", positionTooltip);
     }
