@@ -494,10 +494,7 @@ footer .scroll-page-button-icon {
     }
     section {
         margin: 0;
-        display: block;
-    }
-    article {
-        page-break-inside: avoid;
+        float: none;
     }
     .article-content img {
         border-width: 0;
