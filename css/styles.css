@@ -44,6 +44,10 @@ body {
     }
 }
 
+#title-page-print {
+    display: none;
+}
+
 #title-page h1 {
     background-color: var(--accent-color);
     min-width: 80%;
@@ -54,6 +58,17 @@ body {
     color: var(--bg-color);
     padding: 0.2em 0.3em;
     text-align: right;
+}
+
+#title-page-print h1 {
+    font-size: 6vh;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding: 0.2em 0.3em;
+    text-align: right;
+    border-style: solid;
+    border-width: 0 0 0 0.15em;
+    border-color: var(--accent-color);
 }
 
 @keyframes fly-in-secondary-title {
@@ -483,6 +498,12 @@ footer .scroll-page-button-icon {
 
 @media print {
     #title-page {
+        display: none;
+    }
+    #title-page-print {
+        display: flex;
+    }
+    #fact-entry-name {
         display: none;
     }
     .fact-content {
