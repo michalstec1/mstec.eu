@@ -318,6 +318,11 @@ article {
     border-style: solid;
     border-color: var(--bg-color-darkest);
     border-width: 0.15em;
+    transition: border-color 300ms;
+}
+
+.article-content img:hover {
+    border-color: var(--neutral-color-light);
 }
 
 .article-content h2 {
