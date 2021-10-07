@@ -233,6 +233,10 @@ article {
     margin: 1em 1.5em;
 }
 
+#fact-entry-printout {
+    display: none;
+}
+
 .fact-header {
     color: var(--primary-color-lightest);
     margin-bottom: 1em;
@@ -505,6 +509,9 @@ footer .scroll-page-button-icon {
     }
     #fact-entry-name {
         display: none;
+    }
+    #fact-entry-printout {
+        display: block;
     }
     .fact-content {
         color: var(--primary-color);
