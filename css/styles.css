@@ -304,6 +304,7 @@ article {
     width: 100%;
     margin: 0.8em 0;
     row-gap: 0.8em;
+    line-height: 1.5;
 }
 
 .article-left {
